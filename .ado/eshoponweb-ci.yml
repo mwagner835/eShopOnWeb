@@ -5,13 +5,13 @@
 resources:
   repositories:
     - repository: self
-  trigger:
-    branches:
-      include:
-      - main
-    paths:
-      include:
-      - src/web/*
+      trigger:
+        branches:
+          include:
+          - main
+        paths:
+          include:
+          - src/web/*
 
 stages:
 - stage: Build
