@@ -10,9 +10,9 @@ stages:
   jobs:
   - job: Build
     pool:
-      name: az400m03l03a-pool
+      name: Default
       demands:
-      - Agent.Name -equals az400m03-vm0
+      - Agent.Name -equals nb2437
     steps:
     - task: DotNetCoreCLI@2
       displayName: Restore
